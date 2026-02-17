@@ -5,7 +5,7 @@ import java.awt.*;
 
 public class MainFrame extends JFrame {
 
-    public MainFrame(final Dimension dimension, final JPanel mainPanel) {
+    public MainFrame(final Dimension dimension, final JPanel mainPanel){
         super("Sudoku");
         this.setSize(dimension);
         this.setPreferredSize(dimension);
@@ -15,4 +15,5 @@ public class MainFrame extends JFrame {
         this.setResizable(false);
         this.add(mainPanel);
     }
+
 }

@@ -3,9 +3,9 @@ package sudoku.uicustom.button;
 import javax.swing.*;
 import java.awt.event.ActionListener;
 
-public class FinishedGameButton extends JButton {
+public class FinishGameButton extends JButton {
 
-    public FinishedGameButton(final ActionListener actionListener) {
+    public FinishGameButton(final ActionListener actionListener) {
         this.setText("Concluir");
         this.addActionListener(actionListener);
     }

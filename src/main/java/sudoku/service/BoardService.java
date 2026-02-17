@@ -18,23 +18,23 @@ public class BoardService {
         this.board = new Board(initBoard(gameConfig));
     }
 
-    public List<List<Space>> getSpaces() {
-        return this.board.getSpaces();
+    public List<List<Space>> getSpaces(){
+        return board.getSpaces();
     }
 
-    public void reset() {
-        this.board.reset();
+    public void reset(){
+        board.reset();
     }
 
-    public boolean hasErrors() {
+    public boolean hasErrors(){
         return board.hasErrors();
     }
 
-    public GameStatusEnum getStatus() {
+    public GameStatusEnum getStatus(){
         return board.getStatus();
     }
 
-    public boolean gameIsFinished() {
+    public boolean gameIsFinished(){
         return board.gameIsFinished();
     }
 
@@ -50,8 +50,7 @@ public class BoardService {
                 spaces.get(i).add(currentSpace);
             }
         }
+
         return spaces;
     }
 }
-
-
